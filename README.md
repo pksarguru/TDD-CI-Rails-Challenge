@@ -12,9 +12,9 @@ Our first step is to create a new Rails application and set it up for testing.  
 
 
 ### Release 1: List Songs on the Homepage
-Our application is going to allow users to create a collection of their favorite songs.  Instead of attempting to build everything all at once, lets start with a simple feature:  visiting the homepage and seeing a list of songs (see Figure 1).
+Our application is going to allow users to create a collection of their favorite songs.  Instead of attempting to build everything all at once, lets start with a simple feature:  visiting the homepage and seeing a list of songs (see Figure 1 for an example).
 
-Remember, the focus of this challenge is the process of test-driven development for a Rails application, not simply building the required functionality.  Begin by writing a feature test.  What might such a test look like?  Well, let's say we have a few songs in our database.  Then, when a user visits the homepage, each song is represented on the page.  And, perhaps we test for a specific song title and artist to be on the page.
+Remember, the focus of this challenge is the process of test-driven development for a Rails application, not simply building the required functionality.  Begin by writing a feature test.  What might such a test look like?  Well, let's say we have a few songs in our database.  Then, when a user visits the homepage, each of the songs is represented on the page.
 
 ![Songs listed on homepage](readme-assets/homepage-with-songs-mockup.png)  
 *Figure 1*. Listing songs on the homepage.
