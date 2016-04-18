@@ -19,6 +19,14 @@ Remember, the focus of this challenge is the process of test-driven development 
 ![Songs listed on homepage](readme-assets/homepage-with-songs-mockup.png)  
 *Figure 1*. Listing songs on the homepage.
 
+
+### Release 2: User Registration, Log In, and Log Out
+As stated in *Release 1*, our application is going to allow users to create a collection of their favorite songs. We have songs.  Now we need users.  Write feature tests that describe registering a new account, logging in, and logging out; the mockup in Figure 2 shows an example registration workflow.
+
+![Registration animation](readme-assets/registration-animation.gif)  
+*Figure 2*. Example registration flow.
+
+
 [capybara]: https://github.com/jnicklas/capybara
 [rock-paper-scissors challenge]: ../../../rocket-paperplane-scissors-challenge
 [rspec-rails]: https://github.com/rspec/rspec-rails
