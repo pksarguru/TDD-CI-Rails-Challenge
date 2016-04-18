@@ -27,6 +27,13 @@ As stated in *Release 1*, our application is going to allow users to create a co
 *Figure 2*. Example registration flow.
 
 
+### Release 3: Favoriting Songs
+Now add a feature that allows users to favorite songs.  On the homepage, if users are logged in, they should be able to click a button to favorite a song.  However, if users are not logged in, attempting to favorite a song should take the them to a log-in page (see Figure 3).  Begin with a feature test for each case before adding the functionality to the site.
+
+![Favoriting a song requires log in](readme-assets/favoriting-animation.gif)  
+*Figure 3*.  Favoriting a song requires that a user be logged in.
+
+
 [capybara]: https://github.com/jnicklas/capybara
 [rock-paper-scissors challenge]: ../../../rocket-paperplane-scissors-challenge
 [rspec-rails]: https://github.com/rspec/rspec-rails
