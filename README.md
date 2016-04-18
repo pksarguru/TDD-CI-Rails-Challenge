@@ -34,6 +34,10 @@ Now add a feature that allows users to favorite songs.  On the homepage, if user
 *Figure 3*.  Favoriting a song requires that a user be logged in.
 
 
+## Conclusion
+Feature tests help guide the development of our applications.  By writing and working through feature tests, we'll uncover what our application needs:  what models with what behaviors, what routes and controllers, etc.  And, in addition, what other tests we should write.
+
+
 [capybara]: https://github.com/jnicklas/capybara
 [rock-paper-scissors challenge]: ../../../rocket-paperplane-scissors-challenge
 [rspec-rails]: https://github.com/rspec/rspec-rails
