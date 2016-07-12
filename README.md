@@ -4,6 +4,12 @@
 This challenge assumes that we're—if not comfortable—at least familiar with testing a Rails application (see [rock-paper-scissors challenge][]).  In this challenge, we'll build a Rails application feature-by-feature, taking an [outside-in][thoughtbot outside-in testing] approach to testing:  for each new feature, we'll begin by writing a feature test which will lead us to write further tests as it drives our development (e.g., unit tests for our models).
 
 
+### Test-driven Development
+In test-driven development, we write one test and then write just enough code to make that test pass.  Then we write the next test and make it pass.  One test after another, we write the test and then the code to make the test pass until we've built our application.
+
+When we take the outside-in approach to testing a Rails application, we begin by writing a feature test and then write the code to implement that feature.  We'll need to work on our controllers and models to build the feature.  When we do, we'll drive their development with tests, too.  This means we'll be writing new tests for controllers and models while the feature test is still failing.  But in writing and passing these other tests, our goal is to write just enough code to pass the feature test.  And then we move on to the next feature.
+
+
 ## Releases
 ### Release 0: Set up a New Application for Testing
 Our first step is to create a new Rails application and set it up for testing.  Begin by generating a new Rails app, but pass on some of the default options: (1) use a Postgres database, (2) skip Test Unit as we'll be testing with RSpec.  Then, set up the application to test with RSpec, using the [rspec-rails][] gem.  And, finally, add [Capybara][] for feature testing.
