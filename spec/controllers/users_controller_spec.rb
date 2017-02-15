@@ -15,21 +15,21 @@ describe UsersController do
 
   describe 'POST #create' do
     it 'responds with status code 302' do
-      post :create
+      post(:create, params: {user: {username: "joe", email: "joe@joe.com", password: "joe", password_confirmation: "joe"}})
       expect(response).to have_http_status 302
     end
 
     it 'creates a new user in the database' do
-      expect{post(:create, params: {user: {username: "joe", email: "joe@joe.com", password: "joe"}})}.to change{User.all.length}.by(1)
+      expect{post(:create, params: {user: {username: "joe", email: "joe@joe.com", password: "joe", password_confirmation: "joe"}})}.to change{User.all.length}.by(1)
     end
 
     it "assigns the newly created user to the session" do
-      post(:create, params: {user: {username: "joe", email: "joe@joe.com", password: "joe"}})
+      post(:create, params: {user: {username: "joe", email: "joe@joe.com", password: "joe", password_confirmation: "joe"}})
       expect(session[:user_id]).to eq(User.last.id)
     end
 
     it "redirects to index" do
-      post(:create, params: {user: {username: "joe", email: "joe@joe.com", password: "joe"}})
+      post(:create, params: {user: {username: "joe", email: "joe@joe.com", password: "joe", password_confirmation: "joe"}})
       expect(response).to redirect_to songs_path
     end
   end
