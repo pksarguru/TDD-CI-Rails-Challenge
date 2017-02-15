@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   # resources: songs, only: [:index]
 
   get '/songs' => "songs#index"
+  get '/users/new' => "users#new"
+  post '/users' => "users#create"
 end

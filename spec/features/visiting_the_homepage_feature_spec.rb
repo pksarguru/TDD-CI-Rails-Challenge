@@ -6,6 +6,7 @@ feature "visiting the homepage" do
 
     visit '/'
 
-    expect(page).to have_content(song.title)
+    expect(page).to have_content("Boombastic")
+    expect(page).to have_content("By Shaggy")
   end
 end
